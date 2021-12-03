@@ -2,16 +2,8 @@
 A repository for generating RDF graph embeddings on RDF graphs using RDF2Vec.
 
 ## Guide
-Build the Docker file
+Run the following command, and the embeddings will be in `walks/vector.txt`.
 
 ```
-docker build -t dbp .
+bash run.sh
 ```
-
-Run the container
-
-```
-docker run --rm --name dbp -v ${PWD}/:/data dbp
-```
-
-The results are in the folder `/walks`.

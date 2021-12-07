@@ -5,13 +5,10 @@ echo 'Download done'
 echo
 
 result_dir="embeddings/"
+ttl_file=dbpedia.ttl
 mkdir $result_dir
 
-for file in files/*
-do
-    echo 'Generating RDF embeddings for' $file
-    result="${result_dir}${file:6:-4}"
-    docker run --rm -v ${PWD}:/data ghcr.io/dwslab/jrdf2vec -graph $file -walkDirectory $result
-    echo 'Done'
-    echo
-done
+echo 'Generating RDF embeddings...'
+path="${result_dir}${ttl_file:6:-4}"
+docker run --rm -v ${PWD}:/data ghcr.io/dwslab/jrdf2vec -graph files/$ttl_file -walkDirectory $path
+echo 'Done'

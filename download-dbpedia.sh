@@ -36,3 +36,14 @@ then
         grep --color=never -F 'isPrimaryTopicOf' ${DATA_DIR}/'wikipedia-links_lang=en.ttl' > ${DATA_DIR}/'parsed-wikipedia-links_lang=en.ttl'
         rm -v ${DATA_DIR}/'wikipedia-links_lang=en.ttl'
 fi
+
+export ttl_file=dbpedia.ttl
+touch $ttl_file
+
+for file in files/*
+do
+    cat $file >> $ttl_file
+    rm $file
+done
+
+mv $ttl_file files

@@ -10,5 +10,7 @@ mkdir $result_dir
 
 echo 'Generating RDF embeddings...'
 path="${result_dir}${ttl_file:6:-4}"
-docker run --rm -v ${PWD}:/data ghcr.io/dwslab/jrdf2vec -graph files/$ttl_file -walkDirectory $path
+docker build -t embeddings .
+docker run --rm -v ${PWD}:/data embeddings -graph files/$ttl_file -walkDirectory $path
+
 echo 'Done'

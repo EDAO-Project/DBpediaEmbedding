@@ -9,3 +9,5 @@ Run the following command, and the embeddings will be in `embeddings/*/vector.tx
 ```
 bash run.sh
 ```
+## Dataset
+RDF2Vec graph embeddings can be downloaded <a href="https://aaudk-my.sharepoint.com/:f:/g/personal/jm14ok_cs_aau_dk/EoQI_oUnO9pDodGjcymFJEoBwCOSRIYt4t6nnkIghxSYSQ?e=PzxMU8">here</a>.

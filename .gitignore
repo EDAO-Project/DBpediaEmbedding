@@ -1,4 +1,4 @@
 files/*
 python-server/
 walks/
-embeddings/
+embeddings/*/

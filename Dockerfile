@@ -21,6 +21,7 @@ RUN mamba install -y openjdk=8 maven
 # Install HDT dependencies
 RUN git clone https://github.com/rdfhdt/hdt-java.git && \
     cd ./hdt-java/ && \
+    git checkout a39daf0 && \
     mvn clean install
 
 # Only rebuild dependencies if change in pom.xml

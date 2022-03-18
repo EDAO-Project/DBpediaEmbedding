@@ -9,7 +9,7 @@ ttl_file=dbpedia.ttl
 mkdir $result_dir
 
 echo 'Generating RDF embeddings...'
-path="${result_dir}${ttl_file:6:-4}"
+path="${result_dir}${ttl_file:0:-4}"
 docker build -t embeddings .
 docker run --rm -v ${PWD}:/data embeddings -graph files/$ttl_file -walkDirectory $path
 

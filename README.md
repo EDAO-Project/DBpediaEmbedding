@@ -38,7 +38,7 @@ Here is listed the parameters used to generate the pretrained embeddings at <a h
 - **Minimum word2vec word count**: 1
 - **Sample rate**: 0.0
 - **Training window size**: 5
-- **Training epocs**: 5
+- **Training epochs**: 5
 
 ## References
 

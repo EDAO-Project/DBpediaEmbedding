@@ -2,7 +2,7 @@
 
 A repository for generating RDF graph embeddings on RDF graphs using RDF2Vec.
 
-RDF2Vec embedding generation code can be found <a href="https://github.com/dwslab/jRDF2Vec">here</a> and is based on the publication [<a href="">Portisch et al.</a>].
+RDF2Vec embedding generation code can be found <a href="https://github.com/dwslab/jRDF2Vec">here</a> and is based on the publication [<a href="https://arxiv.org/abs/2009.07659">Portisch et al.</a>].
 
 ## Generating Embeddings
 

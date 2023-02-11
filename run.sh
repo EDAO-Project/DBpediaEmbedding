@@ -1,3 +1,7 @@
+#!/bin/bash
+
+set -e
+
 ./download-dbpedia.sh dbpedia_files.txt
 
 echo

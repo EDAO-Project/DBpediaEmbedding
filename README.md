@@ -27,7 +27,7 @@ Generating embeddings can take more than a day, but it depends on the number of 
 
 ## Parameters Used
 
-Here is listed the parameters used to generate the pretrained embeddings at <a href="zenodo.com">Zenodo</a>:
+Here is listed the default parameters used to generate the pretrained embeddings:
 
 - **Number of walks per entity**: 100
 - **Depth (hops) per walk**: 4
